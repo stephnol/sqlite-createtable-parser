@@ -8,9 +8,9 @@ add_library(sqlite-createtable-parser STATIC
 )
 
 add_executable(sqlite-createtable-parser-test
-	debug/main.c
-	debug/sql3parse_debug.c
-	debug/sql3parse_debug.h
+	test/main.c
+	test/sql3parse_debug.c
+	test/sql3parse_debug.h
 )
 target_include_directories(sqlite-createtable-parser-test PRIVATE .)
 target_link_libraries(sqlite-createtable-parser-test PUBLIC sqlite-createtable-parser)
